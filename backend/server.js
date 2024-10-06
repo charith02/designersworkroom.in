@@ -10,7 +10,11 @@ const app = express();
 // Middleware
 app.use(cors(
     {
+<<<<<<< HEAD
         origin: ["https://deploy-mern-1whq.vercel.app"],
+=======
+        origin: ["https://designersworkroom-in-frontend.vercel.app"],
+>>>>>>> 42534bf269850521c431f3ad1b331277a538b11f
         methods: ["POST", "GET"],
         credentials: true
     }
