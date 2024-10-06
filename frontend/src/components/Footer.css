@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "Iskry";
+  src: url("/src/assets/fonts/iskry-one-test.otf") format("opentype"), url("/src/assets/fonts/iskry-two-test.otf") format("opentype"), url("/src/assets/fonts/iskry-three-test.otf") format("opentype");
+}
+.footer {
+  background-color: #fff;
+  border-top: 1px solid #eaeaea;
+  padding: 10px 0;
+  font-family: "Iskry", Tahoma, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20vw;
+}
+
+.icon-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+}
+
+.icon-link:hover {
+  color: #007bff;
+}
+
+.footer-text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
