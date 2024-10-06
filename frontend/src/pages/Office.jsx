@@ -31,7 +31,7 @@ const Office = () => {
     setErrorMessage('');
 
     try {
-      const response = await fetch('https://designersworkroom-in.vercel.app/office', {
+      const response = await fetch('https://designersworkroom-in-backend.vercel.app', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

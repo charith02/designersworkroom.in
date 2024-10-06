@@ -23,6 +23,10 @@ mongoose.connect(process.env.MONGO_URI, {
 .then(() => console.log("MongoDB connected"))
 .catch((err) => console.error("MongoDB connection error:", err));
 
+app.length("/", (req, res) => {
+    res.json("Hello");
+})
+
 // Routes
 app.use('/api/queries', queryRoutes); // Use the query routes
 
