@@ -1,9 +1,5 @@
 @font-face {
-<<<<<<< HEAD
-  font-family: "Iskry";
-=======
     font-family: "Iskry";
->>>>>>> 42534bf269850521c431f3ad1b331277a538b11f
   src: url("/src/assets/fonts/iskry-one-test.otf") format("opentype"), url("/src/assets/fonts/iskry-two-test.otf") format("opentype"), url("/src/assets/fonts/iskry-three-test.otf") format("opentype");
     font-family: "Sohne";
     src: url("/src/assets/fonts/Sohne-Leicht.woff2") format("woff2"), url("/src/assets/fonts/Sohne-Leicht.woff") format("woff");
