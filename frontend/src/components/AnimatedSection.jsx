@@ -27,7 +27,7 @@ const AnimatedSection = () => {
       <div className="grid">
         {[...Array(9)].map((_, index) => (
           <div key={index} className="grid-item">
-            <img src={`/src/assets/image${index + 1}.jpg`} alt={`Grid item ${index + 1}`} />
+            <img src={`/assets/image${index + 1}.jpg`} alt={`Grid item ${index + 1}`} />
           </div>
         ))}
       </div>

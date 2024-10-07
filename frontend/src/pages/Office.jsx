@@ -133,7 +133,7 @@ const Office = () => {
         </div>
 
         <div className="image-container">
-          <img src="src/assets/image1.jpg" alt="Office" />
+          <img src="/assets/image1.jpg" alt="Office" />
         </div>
       </div>
 

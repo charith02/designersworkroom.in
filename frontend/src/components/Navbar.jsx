@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav ref={navRef} className={`navbar ${isNavFixed ? 'fixed' : 'relative'}`}>
       <div className="navbar-container">
         <Link to="/" className="logo-link">
-          <img src="/src/assets/logo2.png" alt="Company Logo" className="logo" />
+          <img src="/assets/logo2.png" alt="Company Logo" className="logo" />
         </Link>
         <ul className="nav-links">
           <li><Link to="/work">Work</Link></li>
