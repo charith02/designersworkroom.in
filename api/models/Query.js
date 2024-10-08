@@ -20,4 +20,4 @@ const querySchema = new mongoose.Schema({
     }
 }, { timestamps: true });
 
-module.exports = mongoose.model('Query', querySchema);
+module.exports = mongoose.model('query', querySchema);
