@@ -1,5 +1,5 @@
 // controllers/queryController.js
-const Query = require('../models/Query');
+const Query = require('../models/query');
 
 // Function to handle query submission
 exports.submitQuery = async (req, res) => {
