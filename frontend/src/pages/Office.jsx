@@ -125,7 +125,7 @@ const Office = () => {
             <div className="line"></div>
 
             <ReCAPTCHA
-              sitekey="6Lc0oFsqAAAAAAymibAxilQvOHet7Yyehg2GXIn6" // replace with your actual ReCAPTCHA site key
+              sitekey="6LcxpVsqAAAAANl-rxfNyg7d2hqNNcYWA04kIyHq" // replace with your actual ReCAPTCHA site key
               onChange={onCaptchaChange}
             />
 
