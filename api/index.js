@@ -31,7 +31,7 @@ app.get("/", (req, res) => {
 app.use('/api/queries', queryRoutes); // Use the query routes
 
 // Specify the port and start the server
-const port = process.env.PORT || 5000; // Use process.env.PORT for Heroku or Vercel
+const port = process.env.PORT1 || 5000 || process.env.PORT2; // Use process.env.PORT for Heroku or Vercel
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
