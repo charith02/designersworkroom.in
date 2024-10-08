@@ -1,7 +1,7 @@
 
 @font-face { 
   font-family: "Iskry";
-  src: url("/src/assets/fonts/iskry-one-test.otf") format("opentype"), url("/src/assets/fonts/iskry-two-test.otf") format("opentype"), url("/src/assets/fonts/iskry-three-test.otf") format("opentype");
+  src: url("/assets/fonts/iskry-one-test.otf") format("opentype"), url("/assets/fonts/iskry-two-test.otf") format("opentype"), url("/assets/fonts/iskry-three-test.otf") format("opentype");
 }
 
 /* Navbar Styles */
