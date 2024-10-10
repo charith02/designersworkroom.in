@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import './Office.css'; // Assuming you have a separate CSS file for styling
-import ReCAPTCHA from "react-google-recaptcha"; // Add a ReCAPTCHA library
-import axios from 'axios'; // Import axios
+import './Office.css';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Office = () => {
   const [formData, setFormData] = useState({
@@ -32,23 +31,23 @@ const Office = () => {
     setErrorMessage('');
 
     try {
-      const response = await axios.post('https://designersworkroom-in.onrender.com/api/queries/submit-query', formData, {
+      const response = await fetch('https://designersworkroom-in.onrender.com/api/queries/submit-query', {
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
+        body: JSON.stringify(formData),
       });
 
-      if (response.status === 200) {
+      if (response.ok) {
         setSuccessMessage('Message sent successfully!');
         setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        const data = await response.json();
+        setErrorMessage(data.error || 'Failed to send message.');
       }
     } catch (error) {
-      // Check if error response is available
-      if (error.response) {
-        setErrorMessage(error.response.data.error || 'Failed to send message.');
-      } else {
-        setErrorMessage('Error submitting the form.');
-      }
+      setErrorMessage('Error submitting the form.');
       console.error('Error submitting form:', error);
     } finally {
       setLoading(false);
@@ -125,7 +124,7 @@ const Office = () => {
             <div className="line"></div>
 
             <ReCAPTCHA
-              sitekey="6LcxpVsqAAAAANl-rxfNyg7d2hqNNcYWA04kIyHq" // replace with your actual ReCAPTCHA site key
+              sitekey="6LcxpVsqAAAAANl-rxfNyg7d2hqNNcYWA04kIyHq"
               onChange={onCaptchaChange}
             />
 
@@ -158,11 +157,13 @@ const Office = () => {
           <div className="dialog-content">
             <span className="close-btn" onClick={handleDialogClose}>&times;</span>
             <h1>WORK WITH US</h1>
-            <p>We are always looking for talented Designers, Media Executives and Supervisors to join our team. We do not accept Interns for semesters less than 4 months and Fresh Graduates for less than 1 year.</p>
-            <br />
+            <p>We are always looking for talented Designers, Media Executives and Supervisors to join our team. We do not accept Interns for semesters less than 4 months and Fresh Graduates for less than 1 year.
+            </p>
+            <br></br>
             <p>All applicants must have a good level of spoken and written English and be proficient in the required software. Applications including a portfolio and a resume in PDF format (no larger than 8 Mb) can be submitted to: hello@designersworkroom.in with the subject line Job.</p>
-            <br />
-            <p>Please note that we are currently receiving a large number of applications and therefore cannot guarantee an answer to each applicant. We review all applications and store relevant applications for a maximum period of 6 months after which they are deleted. We do not review material submitted via Issuu, Behance, Google Drive, or in any packaged file format - only applications in .pdf format will be processed.</p>
+            <br></br>
+            <p>
+            Please note that we are currently receiving a large number of applications and therefore cannot guarantee an answer to each applicant. We review all applications and store relevant application for a maximum period of 6 months after which they are deleted. We do not review material submitted via Issuu, Behance, Google Drive or in any packaged file format - only application in .pdf format will be processed.</p>
           </div>
         </div>
       )}
