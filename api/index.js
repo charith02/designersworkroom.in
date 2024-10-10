@@ -11,7 +11,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ["https://designersworkroom-in-frontend.vercel.app"],
+  origin: ["*"],
   methods: ["POST", "GET"],
   credentials: true
 }));
