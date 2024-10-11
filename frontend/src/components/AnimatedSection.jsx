@@ -27,7 +27,12 @@ const AnimatedSection = () => {
       <div className="grid">
         {[...Array(9)].map((_, index) => (
           <div key={index} className="grid-item">
-            <img src={`/assets/image${index + 1}.jpg`} alt={`Grid item ${index + 1}`} />
+            <img
+              src={`/assets/image${index + 1}.jpg`} // Use the same path for simplicity
+              alt={`Grid item ${index + 1}`}
+              loading="lazy" // This enables lazy loading for each image
+              className="grid-image"
+            />
           </div>
         ))}
       </div>
