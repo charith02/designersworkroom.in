@@ -10,11 +10,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
-app.use(cors({
-  origin: ["*"],
-  methods: ["POST", "GET"],
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json()); // Parse JSON request bodies
 
 // Database connection
