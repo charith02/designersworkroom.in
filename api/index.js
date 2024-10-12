@@ -18,16 +18,21 @@ mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopol
   .then(() => console.log("MongoDB connected"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
+const routingMiddleWare = (req, res, next) => {
+  console.log('requested Route', req.baseUrl ? req.baseUrl + req.path : req.path);
+  next();
+}
+
 // Update this line to properly handle the root route
-app.get("/", (req, res) => {
+app.get("/", routingMiddleWare, (req, res) => {
   res.json("Hello"); // Make sure to use .get instead of .length
 });
 
 // Routes
-app.post('/api/queries', queryRoutes); // Use the query routes
+app.use('/api/queries', routingMiddleWare, queryRoutes); // Use the query routes
 
 // Specify the port and start the server
-const port = process.env.PORT || 5000; // Use process.env.PORT for Heroku or Vercel
+const port = process.env.PORT || 4444; // Use process.env.PORT for Heroku or Vercel
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
