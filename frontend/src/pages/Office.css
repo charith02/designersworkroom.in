@@ -5,7 +5,8 @@
     src: url("/assets/fonts/Sohne-Leicht.woff2") format("woff2"), url("/assets/fonts/Sohne-Leicht.woff") format("woff");
   }
 .office-page {
-    padding: 20px;
+    padding: 0 0 3vh 0;
+    margin: 0;
     text-align: center;
     font-family: "Iskry", Tahoma, sans-serif;
     font-weight: bold;

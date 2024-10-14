@@ -1,22 +1,46 @@
 @font-face {
   font-family: "Iskry";
-  src: url("/assets/fonts/iskry-one-test.otf") format("opentype"), url("/assets/fonts/iskry-two-test.otf") format("opentype"), url("/assets/fonts/iskry-three-test.otf") format("opentype");
+  src: url("/assets/fonts/iskry-one-test.otf") format("opentype"), 
+       url("/assets/fonts/iskry-two-test.otf") format("opentype"), 
+       url("/assets/fonts/iskry-three-test.otf") format("opentype");
 }
+
 .footer {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.9); /* Transparent background */
   border-top: 1px solid #eaeaea;
-  padding: 10px 0;
+  padding: 10px 10px;
   font-family: "Iskry", Tahoma, sans-serif;
   font-weight: bolder;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
+  position: fixed; /* Fix the footer to the bottom of the page */
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Make sure the footer stretches across the entire width */
+  z-index: 100; /* Ensure it stays on top of other elements */
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Optional: slight shadow for better visibility */
 }
 
+/* Footer Content Container */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Icons Section */
 .footer-icons {
   display: flex;
-  justify-content: center;
-  gap: 20vw;
+  justify-content: flex-start; /* Align to the left */
+  gap: 10px; /* Reduced gap between icons */
 }
 
+/* Icon Links */
 .icon-link {
   text-decoration: none;
   color: #333;
@@ -37,8 +61,9 @@
   color: #007bff;
 }
 
+/* Footer Text Section */
 .footer-text {
-  margin-top: 20px;
   font-size: 14px;
   color: #666;
+  text-align: right;
 }

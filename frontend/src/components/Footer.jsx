@@ -1,25 +1,25 @@
 import React from 'react';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { Phone, Facebook, Instagram } from 'lucide-react';
 import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer bg-white py-8 border-t">
-      <div className="max-w-7xl mx-auto px-4">
+    <footer className="footer">
+      <div className="footer-content">
+        {/* Icons Section */}
         <div className="footer-icons">
-          <a href="https://maps.app.goo.gl/VnXpXd6JohTEQ68j6" target="_blank" rel="noopener noreferrer" className="icon-link">
-            <MapPin className="icon" />
-            <span>Location</span>
+          <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <Facebook className="icon" />
           </a>
-          <a href="tel:+919718858337" className="icon-link">
+          <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-link">
             <Phone className="icon" />
-            <span>Call Us</span>
           </a>
-          <a href="mailto:hello@designersworkroom.in" className="icon-link">
-            <Mail className="icon" />
-            <span>Email</span>
+          <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <Instagram className="icon" />
           </a>
         </div>
+
+        {/* Copyright Section */}
         <div className="footer-text">
           <p>&copy; {new Date().getFullYear()} Designers Workroom Pvt Ltd. All rights reserved.</p>
         </div>

@@ -9,11 +9,14 @@
   background-color: white;
   width: 100%;
   padding: 15px;
-  font-family: "Iskry";
+  font-family: "Iskry", 'Segoe UI', Tahoma, sans-serif;
   font-weight: bold;
   box-shadow: 0 4px 2px -2px gray;
   transition: top 0.3s;
   z-index: 100;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  
 }
 
 .fixed {
