@@ -19,15 +19,15 @@ const AnimatedSection = () => {
 
   // Define an array of objects where each item has the image number and format
   const images = [
-    { id: 1, format: 'webp' },
-    { id: 2, format: 'webp' },
-    { id: 3, format: 'webp' },
-    { id: 4, format: 'jpg' },
-    { id: 5, format: 'jpg' },
-    { id: 6, format: 'webp' },
-    { id: 7, format: 'jpg' },
-    { id: 8, format: 'jpg' },
-    { id: 9, format: 'jpg' },
+    { id: 1, format: 'jpg' },
+    { id: 2, format: 'jpg' },
+    { id: 3, format: 'jpg' },
+    { id: 4, format: 'webp' },
+    { id: 5, format: 'webp' },
+    { id: 6, format: 'jpg' },
+    { id: 7, format: 'webp' },
+    { id: 8, format: 'webp' },
+    { id: 9, format: 'webp' },
   ];
 
   return (
