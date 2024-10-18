@@ -23,11 +23,11 @@ const Home = () => {
                     <img src="/assets/logo.png" alt="Logo" className={`logo ${logoClass}`} />
                 </div>
                 <div className="slides">
-                    <img src="/assets/slide1.jpg" alt="Slide 1" />
-                    <img src="/assets/slide2.jpg" alt="Slide 2" />
-                    <img src="/assets/slide3.jpg" alt="Slide 3" />
-                    <img src="/assets/slide4.jpg" alt="Slide 3" />
-                    <img src="/assets/slide5.jpg" alt="Slide 3" />
+                    <img src="/assets/slide1.webp" alt="Slide 1" />
+                    <img src="/assets/slide2.webp" alt="Slide 2" />
+                    <img src="/assets/slide3.webp" alt="Slide 3" />
+                    <img src="/assets/slide4.webp" alt="Slide 3" />
+                    <img src="/assets/slide5.webp" alt="Slide 3" />
                 </div>
             </header>
             <Navbar />
