@@ -1,5 +1,16 @@
 /* src/pages/ProjectDetails.css */
+@font-face {
+  font-family: "Iskry";
+  src: url("/assets/fonts/iskry-one-test.otf") format("opentype"),
+       url("/assets/fonts/iskry-two-test.otf") format("opentype"),
+       url("/assets/fonts/iskry-three-test.otf") format("opentype");
+}
 
+@font-face {
+  font-family: "Sohne";
+  src: url("/assets/fonts/Sohne-Leicht.woff2") format("woff2"),
+       url("/assets/fonts/Sohne-Leicht.woff") format("woff");
+}
 .project-section {
   position: sticky;
   top: 0;

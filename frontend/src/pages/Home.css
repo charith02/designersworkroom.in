@@ -11,11 +11,6 @@
          url("/assets/fonts/Sohne-Leicht.woff") format("woff");
 }
 
-/* Font for the ↗ character */
-@font-face {
-    font-family: "SymbolFont";
-    src: url("/assets/fonts/symbol-font.otf") format("opentype");
-}
 
 /* Slideshow Container */
 .slideshow-container {
@@ -124,7 +119,7 @@
 }
 
 .nav-links .arrow {
-    font-family: "SymbolFont", Arial, sans-serif; /* Use a different font for the arrow */
+    font-family: Arial, sans-serif; /* Use a different font for the arrow */
     margin-left: 5px;
 }
 
