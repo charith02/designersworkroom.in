@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
 import './Office.css';
 import ReCAPTCHA from "react-google-recaptcha";
 
@@ -68,7 +66,6 @@ const Office = () => {
 
   return (
     <div className="office-page">
-      <Navbar />
 
       {/* First Section - Form and Image */}
       <div className="section-one">
@@ -139,7 +136,6 @@ const Office = () => {
 
       {/* Third Section - Location with Google Maps */}
       <div className="section-map">
-        <h2>Our Location</h2>
         <iframe
           title="Google Map"
           src={`https://www.google.com/maps/embed/v1/place?key=YOUR_GOOGLE_MAPS_API_KEY&q=28.543544638324946,77.25018130001388`}
@@ -167,8 +163,6 @@ const Office = () => {
           </div>
         </div>
       )}
-
-      <Footer />
     </div>
   );
 };

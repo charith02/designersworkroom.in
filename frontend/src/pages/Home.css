@@ -1,75 +1,35 @@
+@font-face {
+    font-family: "Iskry";
+    src: url("/assets/fonts/iskry-one-test.otf") format("opentype"),
+         url("/assets/fonts/iskry-two-test.otf") format("opentype"),
+         url("/assets/fonts/iskry-three-test.otf") format("opentype");
+}
+  
+@font-face {
+    font-family: "Sohne";
+    src: url("/assets/fonts/Sohne-Leicht.woff2") format("woff2"),
+         url("/assets/fonts/Sohne-Leicht.woff") format("woff");
+}
+
+/* Font for the ↗ character */
+@font-face {
+    font-family: "SymbolFont";
+    src: url("/assets/fonts/symbol-font.otf") format("opentype");
+}
+
 /* Slideshow Container */
 .slideshow-container {
-  position: relative;
-  width: 100%; /* Full viewport width */
-  height: 100vh; /* Full viewport height */
-  overflow: hidden;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
 }
 
-/* Slides - ensure each slide takes up full space */
-.slides {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-}
-
-/* Each image will fade in and out */
-.slides img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0; /* Start hidden */
-  animation: fadeSlide 25s infinite; /* Total duration for all images */
-}
-
-/* Adjust delays for each image based on their position */
-.slides img:nth-child(1) {
-  animation-delay: 0s; /* First image starts immediately */
-}
-
-.slides img:nth-child(2) {
-  animation-delay: 5s; /* Second image starts after first stays for its duration */
-}
-
-.slides img:nth-child(3) {
-  animation-delay: 10s; /* Third image starts after second stays for its duration */
-}
-
-.slides img:nth-child(4) {
-  animation-delay: 15s; /* Fourth image starts after third stays for its duration */
-}
-
-.slides img:nth-child(5) {
-  animation-delay: 20s; /* Fifth image starts after fourth stays for its duration */
-}
-
-/* Keyframes for fading effect */
-@keyframes fadeSlide {
-   /* Fade in phase */
-   0%, 
-   20% {
-    opacity: 0; 
-   }
-  
-   /* Fully visible phase */
-   25%, 
-   45% {
-    opacity: 1; 
-   }
-
-   /* Fade out phase */
-   50%, 
-   100% {
-    opacity: 0; 
-   }
-}
-
-
-/* Center the logo in the middle of the slideshow */
+/* Centered Logo */
 .logo-container {
     position: absolute;
     top: 50%;
@@ -78,40 +38,97 @@
     z-index: 10;
 }
 
-/* Initially, the logo will be black, then fade to its original color */
 .logo {
-    filter: brightness(0); /* Make the logo black */
-    transition: filter 7.0s ease-in-out; /* Smooth transition */
     width: auto;
     height: auto;
+    max-width: 40vw;
+    color: black;
+    filter:brightness(0)
+}
+.logo:hover {
+    filter: brightness(1);
 }
 
-.logo.fade-in {
-    filter: brightness(1); /* Return to normal color */
+/* Slideshow Image */
+.slides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-nav {
-    width:100%;
-    background-color:white;
+/* Quadrant 3: Social Media Icons and Texts */
+.social-media {
+    position: absolute;
+    left: 2%;
+    bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.fixed {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    z-index:50;
+.icon-with-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.relative {
-    position:relative;
+.social-icon {
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
 }
 
-.container {
-    max-width:1200px;
-    margin:auto;
+.icon-text {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    font-family: "Sohne", Tahoma, sans-serif;
+    transition: color 0.3s ease;
 }
 
-.border-b {
-    border-bottom:1px solid black;
+.icon-text:hover,
+.social-icon:hover {
+    color: #555555;
 }
+
+/* Quadrant 1: Navigation Links */
+.nav-links {
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    text-align: right;
+    max-width: 10vw;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-bottom: 10px; /* Space between each link */
+}
+
+.nav-links a {
+    font-size: 18px; /* Set text size to 1.25rem */
+    text-decoration: none;
+    color: white;
+    font-family: "Iskry", 'Segoe UI', Tahoma, sans-serif;
+    transition: color 0.3s ease;
+    display: block; /* Ensure each link takes up the full width of the container */
+}
+
+.nav-links a:hover {
+    color: #555555;
+}
+
+.nav-links .arrow {
+    font-family: "SymbolFont", Arial, sans-serif; /* Use a different font for the arrow */
+    margin-left: 5px;
+}
+
+.nav-links a:hover .arrow {
+    color: #555555;
+}
+

@@ -13,10 +13,6 @@
   box-sizing: border-box;
 }
 
-.work-container {
-  
-}
-
 .grid_ {
   display: grid;
   flex-wrap: wrap;
@@ -24,7 +20,7 @@
   grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
   grid-template-rows: repeat(auto-fill, 1fr); /* Rows automatically fill with equal height */
   gap: 20px;
-  padding: 3vw 0; /* Padding for centering the grid */
+  padding: 3vw 2vh; /* Padding for centering the grid */
   margin: 0 auto; /* Center the grid horizontally */
 }
 
@@ -63,6 +59,13 @@
 .photo-info p{
   font-size: 15px;
   font-family: "Sohne", Tahoma, sans-serif;
+}
+
+.project-link {
+  display: block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #00f;
 }
 
 .grid-item:hover .photo {

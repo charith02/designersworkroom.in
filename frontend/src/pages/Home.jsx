@@ -1,38 +1,51 @@
-import React, { useEffect, useState } from 'react';
-import AnimatedSection from '../components/AnimatedSection';
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
+import AnimatedSection from '../components/AnimatedSection';
 
 const Home = () => {
-    const [logoClass, setLogoClass] = useState('');
-
-    useEffect(() => {
-        // Start the fade-in effect after the initial load
-        const timer = setTimeout(() => {
-            setLogoClass('fade-in');
-        }, 1000); // Delay to simulate fade-in after a short pause
-        return () => clearTimeout(timer); // Cleanup timer on component unmount
-    }, []);
-
     return (
         <div>
             <header className="slideshow-container">
+                {/* Centered logo */}
                 <div className="logo-container">
-                    {/* Apply the logoClass for the fade-in effect */}
-                    <img src="/assets/logo.png" alt="Logo" className={`logo ${logoClass}`} />
+                    <Link to="/"><img src="/assets/logo.png" alt="Logo" className='logo' /></Link>
                 </div>
+
+                {/* Slideshow images */}
                 <div className="slides">
-                    <img src="/assets/slide1.webp" alt="Slide 1" />
-                    <img src="/assets/slide2.webp" alt="Slide 2" />
-                    <img src="/assets/slide3.webp" alt="Slide 3" />
-                    <img src="/assets/slide4.webp" alt="Slide 3" />
-                    <img src="/assets/slide5.webp" alt="Slide 3" />
+                    <img src="/assets/main.webp" alt="Slide 1" />
+                </div>
+
+                {/* Quadrant 3: Social Media Icons */}
+                <div className="social-media">
+                    <div className="icon-with-text">
+                        <FontAwesomeIcon icon={faWhatsapp} className="social-icon" />
+                        <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text">+919718858337</a>
+                    </div>
+                    <div className="icon-with-text">
+                        <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
+                        <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text">designersworkroompvtltd</a>
+                    </div>
+                    <div className="icon-with-text">
+                        <FontAwesomeIcon icon={faInstagram} className="social-icon" />
+                        <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text">designers_workroom</a>
+                    </div>
+                </div>
+
+                {/* Quadrant 1: Navigation Links */}
+                <div className="nav-links">
+                    <ul>
+                        <li><Link to="/office">Office</Link></li>
+                        <li><Link to="/aboutUs">About Us</Link></li>
+                        <li><Link to="/shop">Shop</Link></li>
+                    </ul>
                 </div>
             </header>
-            <Navbar />
+
             <AnimatedSection />
-            <Footer />
         </div>
     );
 };
