@@ -12,5 +12,6 @@ export default defineConfig({
         '@fortawesome/free-brands-svg-icons'
       ],
     },
+    outDir: 'dist',
   },
 });
