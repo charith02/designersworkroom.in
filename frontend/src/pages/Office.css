@@ -1,101 +1,110 @@
 @font-face {
-    font-family: "Iskry";
-  src: url("/assets/fonts/iskry-one-test.otf") format("opentype"), url("/assets/fonts/iskry-two-test.otf") format("opentype"), url("/assets/fonts/iskry-three-test.otf") format("opentype");
-    font-family: "Sohne";
-    src: url("/assets/fonts/Sohne-Leicht.woff2") format("woff2"), url("/assets/fonts/Sohne-Leicht.woff") format("woff");
-  }
+  font-family: "Iskry";
+  src: url("/assets/fonts/iskry-one-test.otf") format("opentype"),
+       url("/assets/fonts/iskry-two-test.otf") format("opentype"),
+       url("/assets/fonts/iskry-three-test.otf") format("opentype");
+  font-family: "Sohne";
+  src: url("/assets/fonts/Sohne-Leicht.woff2") format("woff2"),
+       url("/assets/fonts/Sohne-Leicht.woff") format("woff");
+}
+
 .office-page {
-    padding: 0 0 3vh 0;
-    margin: 0;
-    text-align: center;
-    font-family: "Iskry", Tahoma, sans-serif;
-    font-weight: bold;
+  padding: 0 0 3vh 0;
+  margin: 0;
+  text-align: center;
+  font-family: "Iskry", Tahoma, sans-serif;
+  font-weight: bold;
+  
+}
+.office-details {
+  position: relative;
+  background-color: white;
+  z-index: 2;
+  /* display: flex; */
+  max-height: 300vh; /* Minimum height to fully cover the viewport */
+  justify-content: center;
+  padding: 3vh;
+ 
+  border: 5px solid black;
+}
+/* First Section - Split layout for form and image */
+.section-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  padding: 0 1vh;
+  height: 100vh; /* Set height to 100vh */
+}
 
-  }
-  
-  /* First Section - Split layout for form and image */
-  .section-one {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-    padding: 0 1vh;
-  }
-  
-  .form-container {
-    width: 50%;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-  }
-  .form-container h1{
-    padding-bottom: 6% ;
-  }
-  
-  .image-container {
-    width: 45%;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form label {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  /* Style for input fields */
-  .contact-form input,
-  .contact-form textarea {
-    background-color: white;
-    border: none;
-    border-bottom: 2px solid #000; /* Only a bottom border for the line effect */
-    height:75px; /* Setting the height */
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 10px;
-    font-size: 16px;
-    box-sizing: border-box;
-    resize: none; /* Prevent resizing of textareas */
-  }
-  
-  .contact-form input:focus,
-  .contact-form textarea:focus {
-    outline: none; /* Remove outline on focus */
-    border-bottom: 2px solid #333; /* Darker border when focused */
-  }
-  
-  .submit-btn {
-    width: 100%;
-    padding: 18px;
-    font-size: 20px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-family: "Iskry", Tahoma, sans-serif;
-  }
+.form-container {
+  width: 50%;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 0.9em; /* Slightly reduce font size */
+}
 
-  /* Third Section - Google Map */
-  .section-map {
-    margin: 50px 0;
-  }
-  
-  .section-map iframe {
-    width: 100%;
-    padding: 0 1vh;
-    height: 400px;
-    border: none;
-  }
-  
-  /* Fourth Section - Work with Us */
+.form-container h1 {
+  padding-bottom: 4%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-size: 0.9em;
+}
+
+/* Style for input fields */
+.contact-form input,
+.contact-form textarea {
+  background-color: white;
+  border: none;
+  border-bottom: 2px solid #000;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 14px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #333;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 18px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-family: "Iskry", Tahoma, sans-serif;
+}
+
+/* Third Section - Google Map */
+.section-map {
+  margin: 50px 0;
+}
+
+.section-map iframe {
+  width: 100%;
+  padding: 0 1vh;
+  height: 400px;
+  border: none;
+}
+
+/* Fourth Section - Work with Us */
 .section-work {
   margin: 50px 0;
   display: flex;
@@ -104,8 +113,8 @@
 }
 
 .work-btn {
-  font-size: 20px;
-  width: 10vw; /* Set to 10vw */
+  font-size: 18px;
+  width: 10vw;
   background-color: #000;
   padding: 2vh 0;
   color: #fff;
@@ -131,7 +140,7 @@
 .dialog-content {
   background-color: #fff;
   padding: 5%;
-  position: relative; /* Allow for positioning the close button */
+  position: relative;
   width: 70vw;
   font-size: 18px;
   text-align: center;
@@ -142,27 +151,25 @@
 .dialog-content h1 {
   font-family: "Iskry", Tahoma, sans-serif;
   padding-bottom: 1%;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .close-btn {
   position: absolute;
-  top: 10px; /* Inside the dialog box */
-  right: 10px; /* Inside the dialog box */
+  top: 10px;
+  right: 10px;
   cursor: pointer;
-  font-size: 40px; /* Adjusted size to fit inside */
+  font-size: 35px;
   color: rgb(0, 0, 0);
 }
 
-  
-  /* Success and Error Messages */
-  .success-message {
-    color: green;
-    font-weight: bold;
-  }
-  
-  .error-message {
-    color: red;
-    font-weight: bold;
-  }
-  
+/* Success and Error Messages */
+.success-message {
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+}

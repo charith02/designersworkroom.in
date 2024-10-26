@@ -116,7 +116,8 @@ a {
 }
 
 .gallery-image {
-  height: 500px;
+  height: 482px;
+  width: auto;
   margin-right: 10px;
   border: 1px solid black;
 }
