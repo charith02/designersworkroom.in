@@ -166,6 +166,7 @@
 .icon-text {
   font-size: 16px;
   color: white;
+  font-weight: 700;
   text-decoration: none;
   font-family: "Sohne", Tahoma, sans-serif;
   transition: color 0.3s ease;

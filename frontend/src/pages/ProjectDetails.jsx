@@ -78,7 +78,7 @@ const ProjectDetails = () => {
         <div className="social-media">
           <div className="icon-with-text">
             <FontAwesomeIcon icon={faWhatsapp} className="social-icon" />
-            <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text">+919718858337</a>
+            <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text">+91 9718858337</a>
           </div>
           <div className="icon-with-text">
             <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
@@ -93,7 +93,7 @@ const ProjectDetails = () => {
         <div className="nav-links">
           <ul>
             <li><Link to="/office">Office</Link></li>
-            <li><Link to="/aboutUs">About Us</Link></li>
+            <li><Link to="/aboutUs">About</Link></li>
             <li><Link to="/shop">Shop</Link></li>
           </ul>
         </div>

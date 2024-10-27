@@ -108,6 +108,7 @@
 .nav-links a {
     font-size: 18px; /* Set text size to 1.25rem */
     text-decoration: none;
+    font-weight: 700;
     color: white;
     font-family: "Iskry", 'Segoe UI', Tahoma, sans-serif;
     transition: color 0.3s ease;
