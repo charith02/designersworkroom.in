@@ -39,7 +39,7 @@ const Home = () => {
                 <div className="nav-links">
                     <ul>
                         <li><Link to="/office">Office</Link></li>
-                        <li><Link to="/aboutUs">About</Link></li>
+                        {/* <li><Link to="/aboutUs">About</Link></li> */}
                         <li><Link to="/shop">Shop</Link></li>
                     </ul>
                 </div>
