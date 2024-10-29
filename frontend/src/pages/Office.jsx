@@ -169,7 +169,7 @@ const Office = () => {
               />
 
               <ReCAPTCHA
-                sitekey="6LdewG8qAAAAAO0fu0ynJw4VjWjuhbG4afYiSKc0"
+                sitekey="6Lc9wm8qAAAAAHtFlxnVS-KzuL4nnI5Nm_VZl4Ue"
                 onChange={onCaptchaChange}
               />
 
