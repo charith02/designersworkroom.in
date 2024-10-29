@@ -1,6 +1,7 @@
 import React, { useState} from 'react';
 import {Link} from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Office.css';
 import ReCAPTCHA from "react-google-recaptcha";
@@ -90,25 +91,28 @@ const Office = () => {
 
         {/* Quadrant 3: Social Media Icons */}
         <div className="social-media">
-          <div className="icon-with-text">
-            <FontAwesomeIcon icon={faWhatsapp} className="social-icon" />
-            <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text">+91 9718858337</a>
-          </div>
-          <div className="icon-with-text">
-            <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
-            <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text">designersworkroompvtltd</a>
-          </div>
-          <div className="icon-with-text">
-            <FontAwesomeIcon icon={faInstagram} className="social-icon" />
-            <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text">designers_workroom</a>
-          </div>
-        </div>
+                    <div className="icon-with-text">
+                        <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
+                    </div>
+                    <div className="icon-with-text">
+                        
+                        <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
+                    </div>
+                    <div className="icon-with-text">
+                        
+                        <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faFacebookF} className="social-icon" /></a>
+                    </div>
+                    <div className="icon-with-text">
+                        
+                        <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
+                    </div>
+                </div>
 
         {/* Quadrant 1: Navigation Links */}
         <div className="nav-links">
           <ul>
             <li><Link to="/office">Office</Link></li>
-            {/* <li><Link to="/aboutUs">About</Link></li> */}
+            <li><Link to="/about">About</Link></li>
             <li><Link to="/shop">Shop</Link></li>
           </ul>
         </div>

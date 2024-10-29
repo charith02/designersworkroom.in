@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
-import './AS.css';
+import './AnimatedSection.css';
 import dataLow from '../data/dataLow';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const faqData = [
   {
@@ -30,6 +33,7 @@ const faqData = [
 
 const AnimatedSection = () => {
   const [openFaq, setOpenFaq] = useState(Array(faqData.length).fill(false));
+  const currentYear = new Date().getFullYear();
 
   const toggleFaq = (index) => {
     const updatedFaq = [...openFaq];
@@ -58,7 +62,7 @@ const AnimatedSection = () => {
         <Link to={`/projects/${project.id}`} key={project.id}>
           <div className={`card card${project.id}`}>
             <div className="project-details">
-              <h2>{project.title}</h2>
+              <h2 dangerouslySetInnerHTML={{ __html: project.title }} /> 
               <p>{project.description1}</p>
               <p>{project.description2}</p>
               <span className="see-full-project">View Full Project ↗</span>
@@ -96,6 +100,27 @@ const AnimatedSection = () => {
               )}
             </div>
           ))}
+        </div>
+        <div className="footer">
+          <div className="footer-left">
+            <a href="mailto:hello@designersworkroom.in">
+              <FontAwesomeIcon icon={faEnvelope} className='icon'/>
+            </a>
+            <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faWhatsapp} className='icon'/>
+            </a>
+            <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faFacebookF} className='icon'/>
+            </a>
+            <a href="https://www.instagram.com/designers_workroom" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} className='icon'/>
+            </a>
+          </div>
+          <div className="footer-right">
+            <p>
+              Copyright © {currentYear} | All rights reserved | All images and text are copyrighted unless otherwise specified.
+            </p>
+          </div>
         </div>
       </div>
 

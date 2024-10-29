@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
 import AnimatedSection from '../components/AnimatedSection';
@@ -22,16 +23,19 @@ const Home = () => {
                 {/* Quadrant 3: Social Media Icons */}
                 <div className="social-media">
                     <div className="icon-with-text">
-                        <FontAwesomeIcon icon={faWhatsapp} className="social-icon" />
-                        <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text">+91 9718858337</a>
+                        <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
                     </div>
                     <div className="icon-with-text">
-                        <FontAwesomeIcon icon={faFacebookF} className="social-icon" />
-                        <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text">designersworkroompvtltd</a>
+                        
+                        <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
                     </div>
                     <div className="icon-with-text">
-                        <FontAwesomeIcon icon={faInstagram} className="social-icon" />
-                        <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text">designers_workroom</a>
+                        
+                        <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faFacebookF} className="social-icon" /></a>
+                    </div>
+                    <div className="icon-with-text">
+                        
+                        <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
                     </div>
                 </div>
 
@@ -39,7 +43,7 @@ const Home = () => {
                 <div className="nav-links">
                     <ul>
                         <li><Link to="/office">Office</Link></li>
-                        {/* <li><Link to="/aboutUs">About</Link></li> */}
+                        <li><Link to="/About">About</Link></li>
                         <li><Link to="/shop">Shop</Link></li>
                     </ul>
                 </div>

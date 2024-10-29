@@ -16,6 +16,7 @@
 .slideshow-container {
     width: 100%;
     max-height: 80vh;
+    overflow: hidden;
     display: flex;
     position: sticky;
     top: 0;
@@ -55,35 +56,28 @@
 .social-media {
     position: absolute;
     left: 2%;
-    bottom: 5%;
+    bottom: 3%;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
 .icon-with-text {
     display: flex;
     align-items: center;
-    gap: 10px;
+   
 }
 
 .social-icon {
-    font-size: 24px;
+    font-size: 25px;
     color: white;
     transition: color 0.3s ease;
+    align-items:first baseline;
+
 }
 
-.icon-text {
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-    font-family: "Sohne", Tahoma, sans-serif;
-    transition: color 0.3s ease;
-}
 
-.icon-text:hover,
-.social-icon:hover {
-    color: #555555;
+.social-icon:hover{
+  color: #555555;
 }
 
 /* Quadrant 1: Navigation Links */

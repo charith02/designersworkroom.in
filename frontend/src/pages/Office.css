@@ -9,7 +9,7 @@
 }
 
 .office-page {
-  padding: 0 0 3vh 0;
+  padding: 0;
   margin: 0;
   text-align: center;
   font-family: "Iskry", Tahoma, sans-serif;
@@ -20,12 +20,13 @@
   position: relative;
   background-color: white;
   z-index: 2;
-  /* display: flex; */
-  max-height: 300vh; /* Minimum height to fully cover the viewport */
+  min-height: calc(100vh - [height of slideshow-container]); /* Adjust based on actual height */
   justify-content: center;
   padding: 3vh;
- 
   border: 1px solid black;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
 }
 /* First Section - Split layout for form and image */
 .section-one {

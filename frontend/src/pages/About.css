@@ -1,0 +1,94 @@
+/* src/components/About.css */
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Section 1 Styling */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+.about-image {
+    width: 50%;
+    height: auto;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 20px;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Section 2 Styling */
+.centered-section {
+    text-align: center;
+}
+
+.centered-logo img {
+    height: 50vh;
+    width: auto;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.centered-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+}
+
+/* Section 3 Styling */
+.projects-section {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.project-tile {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.project-tile:hover {
+    background-color: #e0e0e0;
+}
+/* About.css */
+
+
+
