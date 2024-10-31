@@ -121,4 +121,44 @@
 .nav-links a:hover .arrow {
     color: #555555;
 }
+/* Mobile view adjustments */
+@media (max-width: 450px) {
+    /* Slideshow Container */
+    .slideshow-container {
+        max-height: 28vh;
+    }
+
+    /* Centered Logo */
+    .logo {
+        max-width: 60vw; /* Adjust the logo size */
+    }
+
+    /* Social Media Icons */
+    .social-media {
+        left: 5%;
+        bottom: 5%;
+        gap: 10px;
+    }
+
+    .social-icon {
+        font-size: 20px; /* Smaller icons for mobile */
+    }
+
+    /* Navigation Links */
+    .nav-links {
+        top: 2%;
+        right: 2%;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1px; /* Adjust spacing between links */
+    }
+
+    .nav-links a {
+        font-size: 10px; /* Reduce text size */
+    }
+}
+
 

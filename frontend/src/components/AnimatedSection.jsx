@@ -101,7 +101,8 @@ const AnimatedSection = () => {
             </div>
           ))}
         </div>
-        <div className="footer">
+      </div>
+      <div className="footer">
           <div className="footer-left">
             <a href="mailto:hello@designersworkroom.in">
               <FontAwesomeIcon icon={faEnvelope} className='icon'/>
@@ -122,7 +123,6 @@ const AnimatedSection = () => {
             </p>
           </div>
         </div>
-      </div>
 
     </section>
   );
