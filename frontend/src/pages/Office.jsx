@@ -106,7 +106,7 @@ const Office = () => {
                         
                         <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
                     </div>
-                </div>
+        </div>
 
         {/* Quadrant 1: Navigation Links */}
         <div className="nav-links">
@@ -117,8 +117,6 @@ const Office = () => {
           </ul>
         </div>
       </header>
-
-      {/* First Section - Centered Form */}
       <div className="office-details">
         <div className="section-one">
           <div className="form-container">

@@ -113,7 +113,7 @@ const dataLow = [
     },
     {
         id: 6,
-        title: 'House of Red <span class="fallback-font">&</span> Blues',
+        title: 'House of Red & Blues',
         description1: 'Completed in 2022',
         description2: 'Vasundhra Enclave',
         photos: [

@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Iskry";
-  src: url("/assets/fonts/iskry-one-test.otf") format("opentype"),
+  src: url("/assets/fonts/Iskry Regular.otf") format("opentype"),
        url("/assets/fonts/iskry-two-test.otf") format("opentype"),
        url("/assets/fonts/iskry-three-test.otf") format("opentype");
 }
@@ -20,12 +20,6 @@
 h1, h2 {
   font-family: "Iskry", Arial, Helvetica, sans-serif, sans-serif;
 }
-.fallback-font {
-  font-family: "Sohne", Tahoma, sans-serif;
-  font-weight: 600;
-   /* or another font that supports the ampersand */
-}
-
 p {
   font-family: "Sohne", Tahoma, sans-serif;
 }
@@ -36,7 +30,7 @@ a {
 }
 
 .animated-section {
-  background-color: beige;
+  background-color: white;
   text-align: center;
   padding: 0;
   margin: 0;
@@ -173,7 +167,7 @@ a {
 
 .faq-item {
   border-bottom: 1px solid #ddd;
-  padding: 20px 0;
+  padding: 20px;
   font-family: "Sohne", Tahoma, sans-serif;
 }
 
@@ -181,6 +175,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  gap: 1vw;
   cursor: pointer;
 }
 
@@ -188,8 +183,9 @@ a {
   background: none;
   border: none;
   font-size: 24px;
-  font-weight: bold;
   cursor: pointer;
+  font-family: "Iskry";
+  font-weight: bold;
   color: black;
   transition: transform 0.3s;
 }
@@ -251,6 +247,9 @@ a {
   font-size: 20px;
   color: black;
 }
+.footer-left a[href*="facebook.com"] .icon {
+  font-size: 17px;
+}
 .icon:hover{
   color: #555;
 }
@@ -271,7 +270,7 @@ a {
 }
 
 /* Mobile view adjustments */
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   /* Introduction section */
  
   .project-details h2 {
@@ -308,9 +307,6 @@ a {
       padding: 8px 0;
   }
 
-  .faq-toggle-button {
-      font-size: 12px; /* Smaller button size */
-  }
 
   /* Footer */
   .footer-left, .footer-right {

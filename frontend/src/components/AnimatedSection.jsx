@@ -62,7 +62,7 @@ const AnimatedSection = () => {
         <Link to={`/projects/${project.id}`} key={project.id}>
           <div className={`card card${project.id}`}>
             <div className="project-details">
-              <h2 dangerouslySetInnerHTML={{ __html: project.title }} /> 
+              <h2>{project.title}</h2>
               <p>{project.description1}</p>
               <p>{project.description2}</p>
               <span className="see-full-project">View Full Project ↗</span>

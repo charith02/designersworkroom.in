@@ -6,7 +6,8 @@
 }
 
 html, body {
-  height: 100%;
+  height: auto;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -14,6 +15,6 @@ html, body {
 .App {
   text-align: center;
   width: 100%;
-  height: 100vh; /* Ensure the app takes up full viewport height */
+  height: auto; /* Ensure the app takes up full viewport height */
 }
 

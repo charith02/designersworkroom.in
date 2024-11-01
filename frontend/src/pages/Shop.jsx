@@ -5,7 +5,7 @@ const Shop = () => {
     <div className="shop-page">
 
       <h1>Welcome to the Shop Page</h1>
-      <p>Browse and shop our exclusive products here.</p>
+      <p>Coming Soon</p>
 
     </div>
   );
