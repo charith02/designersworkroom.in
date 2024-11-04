@@ -17,4 +17,27 @@ html, body {
   width: 100%;
   height: auto; /* Ensure the app takes up full viewport height */
 }
+/* Basic CSS */
+.shop {
+  text-align: center;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+.product-page img {
+  width: 100%;
+  max-width: 200px;
+}
+.login-dialog {
+  position: fixed;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
 

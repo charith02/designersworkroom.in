@@ -65,6 +65,11 @@ const ProjectDetails = () => {
     };
   }, [isGalleryOpen]);
 
+  const goToNextProject = () => {
+    navigate(`/projects/${(parseInt(projectId) % projectData.length) + 1}`);
+    window.scrollTo(0, 0); // Scroll to the top after navigation
+  };
+
   return (
     <div className="project-details-page">
       <header className="slideshow-container">
@@ -77,22 +82,16 @@ const ProjectDetails = () => {
         </div>
 
         <div className="social-media">
-                    <div className="icon-with-text">
-                        <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
-                    </div>
-                    <div className="icon-with-text">
-                        
-                        <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
-                    </div>
-                    <div className="icon-with-text">
-                        
-                        <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faFacebookF} className="social-icon" /></a>
-                    </div>
-                    <div className="icon-with-text">
-                        
-                        <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
-                    </div>
+          <div className="icon-with-text">
+            <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
           </div>
+          <div className="icon-with-text">
+            <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
+          </div>
+          <div className="icon-with-text">
+            <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
+          </div>
+        </div>
 
         <div className="nav-links">
           <ul>
@@ -106,8 +105,8 @@ const ProjectDetails = () => {
       <div className="project-section">
         <div className="project-container">
           <div className="project-name">
-          <h2>{project.title}</h2>
-          <p>{project.description1} - {project.description2}</p>
+            <h2>{project.title}</h2>
+            <p>{project.description1} - {project.description2}</p>
           </div>
           <div className="project-photos masonry-grid">
             {project.photos.map((photo, index) => (
@@ -122,19 +121,17 @@ const ProjectDetails = () => {
           </div>
         </div>
         <div className="navigation-buttons">
-        <Link to="/" className="btn-left">
-          <span className="symbols">←</span> Home
-        </Link>
-        <button
-          className="btn-right"
-          onClick={() => navigate(`/projects/${(parseInt(projectId) % projectData.length) + 1}`)}
-        >
-          Next project <span className='symbols'>-</span> {projectData[(parseInt(projectId) % projectData.length)].title} <span className="symbols">→</span>
-        </button>
+          <Link to="/" className="btn-left">
+            <span className="symbols">←</span> Home
+          </Link>
+          <button
+            className="btn-right"
+            onClick={goToNextProject}
+          >
+            Next project <span className='symbols'>-</span> {projectData[(parseInt(projectId) % projectData.length)].title} <span className="symbols">→</span>
+          </button>
+        </div>
       </div>
-      </div>
-
-      
 
       {isGalleryOpen && (
         <div className="gallery-modal" onClick={closeGallery}>
@@ -147,7 +144,6 @@ const ProjectDetails = () => {
           <span className="close-gallery" onClick={closeGallery}>&times;</span>
         </div>
       )}
-
     </div>
   );
 };

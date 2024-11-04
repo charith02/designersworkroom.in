@@ -2,6 +2,8 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const bodyParser = require("body-parser");
+const otpRoutes = require("./routes/otp"); // Import OTP routes
 const cors = require('cors');
 const queryRoutes = require('./routes/queryRoutes');
 
@@ -12,6 +14,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json()); // Parse JSON request bodies
+app.use(bodyParser.json());
 
 // Database connection
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -30,9 +33,10 @@ app.get("/", routingMiddleWare, (req, res) => {
 
 // Routes
 app.use('/api/queries', routingMiddleWare, queryRoutes); // Use the query routes
+app.use("/api/auth", otpRoutes);
 
 // Specify the port and start the server
-const port = process.env.PORT || 4444; // Use process.env.PORT for Heroku or Vercel
+const port = process.env.PORT || 5000; // Use process.env.PORT for Heroku or Vercel
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });

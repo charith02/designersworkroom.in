@@ -10,6 +10,10 @@
     src: url("/assets/fonts/Sohne-Leicht.woff2") format("woff2"),
          url("/assets/fonts/Sohne-Leicht.woff") format("woff");
 }
+@font-face {
+    font-family: "Archer";
+    src: url("/assets/fonts/archer.otf") format("opentype");
+}
 
 
 /* Slideshow Container */
@@ -37,12 +41,11 @@
 .logo {
     width: auto;
     height: auto;
-    max-width: 40vw;
-    color: black;
-    filter:brightness(0)
+    max-width: 37vw;
+    
 }
 .logo:hover {
-    filter: brightness(1);
+    filter: brightness(0);
 }
 
 /* Slideshow Image */
@@ -85,10 +88,6 @@
     align-items:first baseline;
 
 }
-.social-media a[href*="facebook.com"] .social-icon {
-    font-size: 22px;
-}
-
 
 .social-icon:hover{
   color: #555555;
@@ -114,7 +113,7 @@
 }
 
 .nav-links a {
-    font-size: 18px; /* Set text size to 1.25rem */
+    font-size: 1.5rem; /* Set text size to 1.25rem */
     text-decoration: none;
     font-weight: 700;
     text-align: center;

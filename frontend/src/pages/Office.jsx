@@ -86,7 +86,7 @@ const Office = () => {
 
         {/* Slideshow images */}
         <div className="slides">
-          <img src="/assets/main.webp" alt="Slide 1" />
+          <img src="/assets/office.webp" alt="Slide 1" />
         </div>
 
         {/* Quadrant 3: Social Media Icons */}
@@ -97,10 +97,6 @@ const Office = () => {
                     <div className="icon-with-text">
                         
                         <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
-                    </div>
-                    <div className="icon-with-text">
-                        
-                        <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faFacebookF} className="social-icon" /></a>
                     </div>
                     <div className="icon-with-text">
                         
@@ -133,7 +129,6 @@ const Office = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                placeholder="Name"
                 required
               />
 
@@ -143,7 +138,6 @@ const Office = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="Email"
                 required
               />
 
@@ -153,7 +147,6 @@ const Office = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                placeholder="Enter subject"
                 required
               />
 
@@ -162,7 +155,6 @@ const Office = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                placeholder="Type your message here..."
                 required
               />
 
@@ -183,7 +175,7 @@ const Office = () => {
 
         {/* Fourth Section - Work with Us */}
         <div className="section-work">
-          <button className="work-btn" onClick={handleDialogOpen}>Work with Us</button>
+          <button className="work-btn" onClick={handleDialogOpen}>WORK WITH US</button>
         </div>
 
         {showDialog && (

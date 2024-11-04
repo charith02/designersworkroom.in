@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
 import AnimatedSection from '../components/AnimatedSection';
 
@@ -17,7 +17,7 @@ const Home = () => {
 
                 {/* Slideshow images */}
                 <div className="slides">
-                    <img src="/assets/main.webp" alt="Slide 1" />
+                    <img src="/assets/7.webp" alt="Slide 1" />
                 </div>
 
                 {/* Quadrant 3: Social Media Icons */}
@@ -28,10 +28,6 @@ const Home = () => {
                     <div className="icon-with-text">
                         
                         <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
-                    </div>
-                    <div className="icon-with-text">
-                        
-                        <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faFacebookF} className="social-icon" /></a>
                     </div>
                     <div className="icon-with-text">
                         

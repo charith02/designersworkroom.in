@@ -1,4 +1,8 @@
 /* src/components/About.css */
+@font-face {
+    font-family: "Archer";
+    src: url("/assets/fonts/archer.OTF") format("opentype");
+}
 
 .about-page {
     display: flex;
@@ -22,9 +26,9 @@
 
 .about-image img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+    height: 100vh;
+    /* border-radius: 8px; */
+    object-fit:cover;
 }
 
 .about-text {
@@ -38,6 +42,7 @@
 /* Section 2 Styling */
 .centered-section {
     text-align: center;
+    margin-bottom: 35px;
 }
 
 .centered-logo img {
@@ -83,6 +88,7 @@
     align-items: center;
     justify-content: center;
     font-weight: 500;
+    font-family: "Archer",Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     transition: background-color 0.3s ease;
 }

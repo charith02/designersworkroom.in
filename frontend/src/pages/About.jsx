@@ -11,7 +11,7 @@ const About = () => {
             <div className="about-section">
                 <div className="about-image">
                     <img 
-                        src="/assets/Ivory 31/low/2.webp" 
+                        src="/assets/about.webp" 
                         alt="Designers Workroom Example" 
                     />
                 </div>
@@ -28,7 +28,7 @@ const About = () => {
             <div className="centered-section">
                 <div className="centered-logo">
                     <img 
-                        src="/assets/about.jpg" 
+                        src="/assets/about-logo.jpg" 
                         alt="Studio Logo Example" 
                     />
                 </div>

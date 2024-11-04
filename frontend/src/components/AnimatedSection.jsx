@@ -4,7 +4,7 @@ import dataLow from '../data/dataLow';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const faqData = [
   {
@@ -109,9 +109,6 @@ const AnimatedSection = () => {
             </a>
             <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faWhatsapp} className='icon'/>
-            </a>
-            <a href="https://www.facebook.com/designersworkroompvtltd/" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebookF} className='icon'/>
             </a>
             <a href="https://www.instagram.com/designers_workroom" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} className='icon'/>
