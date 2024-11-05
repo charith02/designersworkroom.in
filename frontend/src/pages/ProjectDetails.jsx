@@ -4,12 +4,12 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import projectData from '../data/projectData';
+import dataHigh from '../data/dataHigh';
 import './ProjectDetails.css';
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
-  const project = projectData.find(p => p.id === parseInt(projectId));
+  const project = dataHigh.find(p => p.id === parseInt(projectId));
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
   const navigate = useNavigate();
@@ -66,13 +66,13 @@ const ProjectDetails = () => {
   }, [isGalleryOpen]);
 
   const goToNextProject = () => {
-    navigate(`/projects/${(parseInt(projectId) % projectData.length) + 1}`);
+    navigate(`/projects/${(parseInt(projectId) % dataHigh.length) + 1}`);
     window.scrollTo(0, 0); // Scroll to the top after navigation
   };
 
   return (
     <div className="project-details-page">
-      <header className="slideshow-container">
+      <header className="header-container">
         <div className="logo-container">
           <Link to="/"><img src="/assets/logo.png" alt="Logo" className="logo" /></Link>
         </div>
@@ -128,7 +128,7 @@ const ProjectDetails = () => {
             className="btn-right"
             onClick={goToNextProject}
           >
-            Next project <span className='symbols'>-</span> {projectData[(parseInt(projectId) % projectData.length)].title} <span className="symbols">→</span>
+            Next project <span className='symbols'>-</span> {dataHigh[(parseInt(projectId) % dataHigh.length)].title} <span className="symbols">→</span>
           </button>
         </div>
       </div>
@@ -138,7 +138,7 @@ const ProjectDetails = () => {
           <img
             src={project.photos[galleryIndex]}
             alt="Gallery"
-            className="gallery-image"
+            className="modal-image"
             onClick={handleGalleryClick}
           />
           <span className="close-gallery" onClick={closeGallery}>&times;</span>

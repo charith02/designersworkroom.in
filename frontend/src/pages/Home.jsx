@@ -9,7 +9,7 @@ import AnimatedSection from '../components/AnimatedSection';
 const Home = () => {
     return (
         <div>
-            <header className="slideshow-container">
+            <header className="header-container">
                 {/* Centered logo */}
                 <div className="logo-container">
                     <Link to="/"><img src="/assets/logo.png" alt="Logo" className='logo' /></Link>
@@ -17,7 +17,7 @@ const Home = () => {
 
                 {/* Slideshow images */}
                 <div className="slides">
-                    <img src="/assets/7.webp" alt="Slide 1" />
+                    <img src="/assets/home.webp" alt="Slide 1" />
                 </div>
 
                 {/* Quadrant 3: Social Media Icons */}

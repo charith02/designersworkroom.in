@@ -13,6 +13,7 @@ const About = () => {
                     <img 
                         src="/assets/about.webp" 
                         alt="Designers Workroom Example" 
+                        loading="lazy"
                     />
                 </div>
                 <div className="about-text">
@@ -29,7 +30,8 @@ const About = () => {
                 <div className="centered-logo">
                     <img 
                         src="/assets/about-logo.jpg" 
-                        alt="Studio Logo Example" 
+                        alt="Studio Logo Example"
+                        loading="lazy" 
                     />
                 </div>
                 <p className="centered-text">

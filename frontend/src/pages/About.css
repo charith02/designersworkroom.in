@@ -99,27 +99,32 @@
 /* About.css */
 
 @media (max-width: 500px) {
-    .about-page{
-        padding: 0;
-    }
-    .about-section {
-        text-align: center;
-        display: grid;
+    .about-page {
         padding: 0;
     }
     
-    .about-image {
-        max-height: 50vh;
-        min-width: 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
+    .about-section {
+        flex-direction: column; /* Stack items vertically */
         padding: 0;
+        align-items: center;
     }
-    .about-image img{
+    
+    .about-image {
+        width: 100%; /* Set image to take full width */
+        max-height: 50vh;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+    
+    .about-image img {
         border-radius: 0;
+        width: 100%; /* Ensures the image fully occupies the width */
+        height: auto; /* Maintain aspect ratio */
     }
+    
     .about-text {
         padding: 10px 10px;
+        text-align: center; /* Center-align text for better readability */
     }
     .centered-logo img {
         height: 30vh;

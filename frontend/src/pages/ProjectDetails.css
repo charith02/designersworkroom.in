@@ -56,9 +56,10 @@
   justify-content: center;
   align-items: center;
   z-index: 10;
+
 }
 
-.gallery-image {
+.modal-image {
   max-width: 90%;
   max-height: 90%;
   cursor: pointer;
@@ -122,5 +123,13 @@
   }
   .btn-left, .btn-right{
     padding: 10px 10px;
+  }
+  .modal-image {
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 80vh;
+    object-fit: contain;
+    min-height: 60vh;
   }
 } 

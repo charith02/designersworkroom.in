@@ -1,6 +1,6 @@
-// src/data/projectData.js
+// src/data/dataHigh.js
 
-const projectData = [
+const dataHigh = [
   {
     id: 1,
     title: 'Residence 1069',
@@ -71,7 +71,7 @@ const projectData = [
       '/assets/Apartment 2602/high/1.webp',
       '/assets/Apartment 2602/high/2.webp',
       '/assets/Apartment 2602/high/3.webp',
-      '/assets/Apartment 2602/high/4.webp',
+      '/assets/Apartment 2602/low/4.webp',
       '/assets/Apartment 2602/high/5.webp',
       '/assets/Apartment 2602/high/6.webp',
       '/assets/Apartment 2602/high/7.webp',
@@ -153,5 +153,5 @@ const projectData = [
   },
 ];
   
-  export default projectData;
+  export default dataHigh;
   

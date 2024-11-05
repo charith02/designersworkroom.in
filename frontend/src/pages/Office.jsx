@@ -78,7 +78,7 @@ const Office = () => {
 
   return (
     <div className="office-page">
-      <header className="slideshow-container">
+      <header className="header-container">
         {/* Centered logo */}
         <div className="logo-container">
           <Link to="/"><img src="/assets/logo.png" alt="Logo" className='logo' /></Link>
@@ -86,7 +86,7 @@ const Office = () => {
 
         {/* Slideshow images */}
         <div className="slides">
-          <img src="/assets/office.webp" alt="Slide 1" />
+          <img src="/assets/office.webp" alt="Slide 1" loading="lazy" />
         </div>
 
         {/* Quadrant 3: Social Media Icons */}
