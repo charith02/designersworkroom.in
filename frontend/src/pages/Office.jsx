@@ -40,7 +40,7 @@ const Office = () => {
     setErrorMessage('');
 
     try {
-      const response = await fetch('https://designersworkroom-in.onrender.com/api/queries/submit-query', {
+      const response = await fetch('https://designersworkroom-backend-in.onrender.com/api/queries/submit-query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
