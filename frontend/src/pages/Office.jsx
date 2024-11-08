@@ -159,7 +159,7 @@ const Office = () => {
               />
 
               <ReCAPTCHA
-                sitekey="6Lc9wm8qAAAAAHtFlxnVS-KzuL4nnI5Nm_VZl4Ue"
+                sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
                 onChange={onCaptchaChange}
               />
 
