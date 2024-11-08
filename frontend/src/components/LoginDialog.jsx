@@ -24,7 +24,7 @@ const LoginDialog = ({ onClose, onLogin }) => {
             const response = await axios.post("http://localhost:5000/auth/verify-otp", { phone, otp });
             if (response.data.success) {
                 alert("Logged in successfully!");
-                onLogin(response.data.sessionId); // Pass sessionId to parent component
+                onLogin(response.data.sessionId);
                 onClose();
             } else {
                 alert("Invalid OTP");

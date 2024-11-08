@@ -73,7 +73,7 @@ const Office = () => {
   };
 
   const onCaptchaChange = (value) => {
-    setCaptchaVerified(!!value); // Set captchaVerified to true if value exists
+    setCaptchaVerified(!!value);
   };
 
   return (
@@ -84,12 +84,12 @@ const Office = () => {
           <Link to="/"><img src="/assets/logo.png" alt="Logo" className='logo' /></Link>
         </div>
 
-        {/* Slideshow images */}
+        
         <div className="slides">
           <img src="/assets/office.webp" alt="Slide 1" loading="lazy" />
         </div>
 
-        {/* Quadrant 3: Social Media Icons */}
+        
         <div className="social-media">
                     <div className="icon-with-text">
                         <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
@@ -104,7 +104,7 @@ const Office = () => {
                     </div>
         </div>
 
-        {/* Quadrant 1: Navigation Links */}
+        
         <div className="nav-links">
           <ul>
             <li><Link to="/office">Office</Link></li>

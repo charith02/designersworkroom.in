@@ -10,17 +10,17 @@ const Home = () => {
     return (
         <div>
             <header className="header-container">
-                {/* Centered logo */}
+                
                 <div className="logo-container">
                     <Link to="/"><img src="/assets/logo.png" alt="Logo" className='logo' /></Link>
                 </div>
 
-                {/* Slideshow images */}
+                
                 <div className="slides">
                     <img src="/assets/home.webp" alt="Slide 1" />
                 </div>
 
-                {/* Quadrant 3: Social Media Icons */}
+            
                 <div className="social-media">
                     <div className="icon-with-text">
                         <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
@@ -35,7 +35,7 @@ const Home = () => {
                     </div>
                 </div>
 
-                {/* Quadrant 1: Navigation Links */}
+                
                 <div className="nav-links">
                     <ul>
                         <li><Link to="/office">Office</Link></li>

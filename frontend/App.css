@@ -1,4 +1,4 @@
-/* Reset CSS */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ html, body {
 .App {
   text-align: center;
   width: 100%;
-  height: auto; /* Ensure the app takes up full viewport height */
+  height: auto;
 }
 /* Basic CSS */
 .shop {

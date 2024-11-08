@@ -29,8 +29,8 @@ p {
 }
 
 a {
-  text-decoration: none; /* Remove underline */
-  color: inherit; /* Inherit the text color from the parent element */
+  text-decoration: none;
+  color: inherit;
 }
 
 .animated-section {
@@ -66,13 +66,13 @@ a {
 }
 
 .intro p:first-of-type {
-  margin-bottom: 60px; /* Adjust the value as needed */
+  margin-bottom: 60px;
 }
 
 .project {
   border: 1px solid black;
   background-color: white;
-  height: 80px; /* Fixed height for the project title */
+  height: 80px;
   justify-content: center;
   color: black;
   display: flex;
@@ -86,10 +86,9 @@ a {
   background-color: white;
   border: 1px solid black;
   margin: 0 0;
-  /* background-color: beige; */
   padding: 20px;
   position: sticky;
-  top: 80px; /* Card sticks below the project div */
+  top: 80px;
 }
 
 .project-details {
@@ -297,7 +296,7 @@ a {
   }
 
   .faq h2 {
-      font-size: 2.2rem; /* Smaller font size for titles */
+      font-size: 2.2rem;
       line-height: 40px;
   }
 

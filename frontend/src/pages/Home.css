@@ -50,9 +50,9 @@
 
 /* Slideshow Image */
 .slides {
-    width: 100%; /* Or specify a specific width */
-    height: 100%; /* Or specify a specific height */
-    overflow: hidden; /* Ensures no overflow if the image aspect ratio is different */
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     
@@ -130,13 +130,12 @@
 .nav-links a:hover .arrow {
     color: #555555;
 }
-/* Mobile view adjustments */
+
 @media (max-width: 500px) {
-    /* Slideshow Container */
     
     /* Centered Logo */
     .logo {
-        max-width: 100vw; /* Adjust the logo size */
+        max-width: 100vw;
     }
 
     /* Social Media Icons */
@@ -147,7 +146,7 @@
     }
 
     .social-icon {
-        font-size: 20px; /* Smaller icons for mobile */
+        font-size: 20px;
     }
     .social-media a[href*="facebook.com"] .social-icon {
         font-size: 17px;
@@ -162,11 +161,11 @@
     .nav-links ul {
         display: flex;
         flex-direction: column;
-        gap: 1px; /* Adjust spacing between links */
+        gap: 1px;
     }
 
     .nav-links a {
-        font-size: 20px; /* Reduce text size */
+        font-size: 20px;
     }
 }
 

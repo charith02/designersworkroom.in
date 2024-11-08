@@ -104,13 +104,13 @@
     }
     
     .about-section {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         padding: 0;
         align-items: center;
     }
     
     .about-image {
-        width: 100%; /* Set image to take full width */
+        width: 100%;
         max-height: 50vh;
         margin-bottom: 20px;
         overflow: hidden;
@@ -118,13 +118,13 @@
     
     .about-image img {
         border-radius: 0;
-        width: 100%; /* Ensures the image fully occupies the width */
-        height: auto; /* Maintain aspect ratio */
+        width: 100%;
+        height: auto;
     }
     
     .about-text {
         padding: 10px 10px;
-        text-align: center; /* Center-align text for better readability */
+        text-align: center;
     }
     .centered-logo img {
         height: 30vh;
@@ -136,13 +136,13 @@
         padding: 10px;
     }
     .project-grid {
-        grid-template-columns: 1fr; /* Stack in a single column */
+        grid-template-columns: 1fr;
     }
     .projects-section h2 {
-        font-size: 1.5rem; /* Slightly smaller heading */
+        font-size: 1.5rem;
     }
     .project-tile {
-        padding: 15px; /* Reduce padding */
+        padding: 15px;
     }
 }
 

@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import items from "../data/items";
-import "./Shop.css"; // Make sure you have the CSS file for styling
+import "./Shop.css";
 
 const Shop = () => {
     // Toggle this to `true` for local development to hide the cover

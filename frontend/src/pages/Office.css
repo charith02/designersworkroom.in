@@ -22,7 +22,7 @@
   position: relative;
   background-color: white;
   z-index: 2;
-  min-height: calc(100vh - [height of header-container]); /* Adjust based on actual height */
+  min-height: calc(100vh - [height of header-container]);
   justify-content: center;
   padding: 3vh;
   border: 1px solid black;
@@ -36,7 +36,7 @@
   align-items: center;
   margin-bottom: 50px;
   padding: 0 1vh;
-  height: 100vh; /* Set height to 100vh */
+  height: 100vh; 
 }
 
 .form-container {
@@ -44,7 +44,7 @@
   padding: 15px;
   background-color: #ffffff;
   border-radius: 10px;
-  font-size: 0.9em; /* Slightly reduce font size */
+  font-size: 0.9em;
 }
 
 .form-container h1 {

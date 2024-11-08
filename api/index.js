@@ -28,7 +28,7 @@ const routingMiddleWare = (req, res, next) => {
 
 // Update this line to properly handle the root route
 app.get("/", routingMiddleWare, (req, res) => {
-  res.json("Hello"); // Make sure to use .get instead of .length
+  res.json("Hello");
 });
 
 // Routes
@@ -36,7 +36,7 @@ app.use('/api/queries', routingMiddleWare, queryRoutes); // Use the query routes
 app.use("/api/auth", otpRoutes);
 
 // Specify the port and start the server
-const port = process.env.PORT || 5000; // Use process.env.PORT for Heroku or Vercel
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
 });
