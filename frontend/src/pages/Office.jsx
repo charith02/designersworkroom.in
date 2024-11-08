@@ -13,8 +13,7 @@ const Office = () => {
     subject: '',
     message: '',
   });
-  const recaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
-
+  
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -26,7 +25,7 @@ const Office = () => {
       ...formData,
       [e.target.name]: e.target.value,
     });
-  };
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -160,7 +159,7 @@ const Office = () => {
               />
 
               <ReCAPTCHA
-                sitekey={recaptchaSiteKey}
+                sitekey={"6Lc9wm8qAAAAAHtFlxnVS-KzuL4nnI5Nm_VZl4Ue"}
                 onChange={onCaptchaChange}
               />
 
