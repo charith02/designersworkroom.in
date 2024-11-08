@@ -1,0 +1,1 @@
+A web solution for an interior design firm in Delhi using the MERN stack. I crafted a visually engaging frontend with React and CSS to highlight the firm’s services, while implementing secure, efficient backend APIs with Node.js and Express.js. The project was deployed on Vercel (frontend) and Render (backend).
