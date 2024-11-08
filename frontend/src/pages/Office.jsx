@@ -13,6 +13,7 @@ const Office = () => {
     subject: '',
     message: '',
   });
+  const recaptchaSiteKey = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
@@ -159,7 +160,7 @@ const Office = () => {
               />
 
               <ReCAPTCHA
-                sitekey={process.env.REACT_APP_RECAPTCHA_SITE_KEY}
+                sitekey={recaptchaSiteKey}
                 onChange={onCaptchaChange}
               />
 
