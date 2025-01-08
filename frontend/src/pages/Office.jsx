@@ -5,6 +5,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Office.css';
 import ReCAPTCHA from "react-google-recaptcha";
+import GTM from "../components/GTM";
 
 const Office = () => {
   const [formData, setFormData] = useState({
@@ -78,6 +79,7 @@ const Office = () => {
 
   return (
     <div className="office-page">
+      <GTM />
       <header className="header-container">
         {/* Centered logo */}
         <div className="logo-container">
