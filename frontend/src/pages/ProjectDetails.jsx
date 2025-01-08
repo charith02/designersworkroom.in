@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import dataHigh from '../data/dataHigh';
 import './ProjectDetails.css';
+import GTM from "../components/GTM";
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -72,6 +73,7 @@ const ProjectDetails = () => {
 
   return (
     <div className="project-details-page">
+      <GTM />
       <header className="header-container">
         <div className="logo-container">
           <Link to="/"><img src="/assets/logo.png" alt="Logo" className="logo" /></Link>
