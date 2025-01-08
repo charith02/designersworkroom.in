@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './AnimatedSection.css';
+import GTM from './GTM.js';
 import dataLow from '../data/dataLow';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
