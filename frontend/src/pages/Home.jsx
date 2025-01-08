@@ -10,6 +10,7 @@ import GTM from "../components/GTM";
 const Home = () => {
     return (
         <div>
+            <GTM />
             <header className="header-container">
                 
                 <div className="logo-container">
