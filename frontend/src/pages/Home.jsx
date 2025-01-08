@@ -5,6 +5,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
 import AnimatedSection from '../components/AnimatedSection';
+import GTM from "../components/GTM";
 
 const Home = () => {
     return (
