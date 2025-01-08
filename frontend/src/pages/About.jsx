@@ -3,10 +3,12 @@ import React from 'react';
 import projects from '../data/project';
 import './About.css';
 import { Link } from 'react-router-dom';
+import GTM from "../components/GTM";
 
 const About = () => {
     return (
         <div className="about-page">
+            <GTM />
             {/* Section 1 */}
             <div className="about-section">
                 <div className="about-image">
