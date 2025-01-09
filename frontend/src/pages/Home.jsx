@@ -6,11 +6,13 @@ import { faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import './Home.css';
 import AnimatedSection from '../components/AnimatedSection';
 import GTM from "../components/GTM";
+import Analytics from '../components/Analytics';
 
 const Home = () => {
     return (
         <div>
             <GTM />
+            <Analytics />
             <header className="header-container">
                 
                 <div className="logo-container">
