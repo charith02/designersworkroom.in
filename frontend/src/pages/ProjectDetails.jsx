@@ -7,6 +7,7 @@ import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-s
 import dataHigh from '../data/dataHigh';
 import './ProjectDetails.css';
 import GTM from "../components/GTM";
+import Analytics from '../components/Analytics';
 
 const ProjectDetails = () => {
   const { projectId } = useParams();
@@ -74,6 +75,7 @@ const ProjectDetails = () => {
   return (
     <div className="project-details-page">
       <GTM />
+      <Analytics />
       <header className="header-container">
         <div className="logo-container">
           <Link to="/"><img src="/assets/logo.png" alt="Logo" className="logo" /></Link>
