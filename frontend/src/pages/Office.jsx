@@ -6,6 +6,7 @@ import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-s
 import './Office.css';
 import ReCAPTCHA from "react-google-recaptcha";
 import GTM from "../components/GTM";
+import Analytics from '../components/Analytics';
 
 const Office = () => {
   const [formData, setFormData] = useState({
@@ -80,6 +81,7 @@ const Office = () => {
   return (
     <div className="office-page">
       <GTM />
+      <Analytics />
       <header className="header-container">
         {/* Centered logo */}
         <div className="logo-container">
