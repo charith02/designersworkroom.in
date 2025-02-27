@@ -1,5 +1,5 @@
-import React, { useState} from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -15,7 +15,7 @@ const Office = () => {
     subject: '',
     message: '',
   });
-  
+
   const [loading, setLoading] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -34,6 +34,7 @@ const Office = () => {
 
     if (!captchaVerified) {
       alert('Please complete the CAPTCHA');
+
       return;
     }
 
@@ -88,27 +89,27 @@ const Office = () => {
           <Link to="/"><img src="/assets/logo.png" alt="Logo" className='logo' /></Link>
         </div>
 
-        
+
         <div className="slides">
           <img src="/assets/office.webp" alt="Slide 1" loading="lazy" />
         </div>
 
-        
+
         <div className="social-media">
-                    <div className="icon-with-text">
-                        <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
-                    </div>
-                    <div className="icon-with-text">
-                        
-                        <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
-                    </div>
-                    <div className="icon-with-text">
-                        
-                        <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
-                    </div>
+          <div className="icon-with-text">
+            <a href="mailto:hello@designersworkroom.in"><FontAwesomeIcon icon={faEnvelope} className="social-icon" /></a>
+          </div>
+          <div className="icon-with-text">
+
+            <a href="https://wa.me/+919718858337" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faWhatsapp} className="social-icon" /></a>
+          </div>
+          <div className="icon-with-text">
+
+            <a href="https://www.instagram.com/designers_workroom/" target="_blank" rel="noopener noreferrer" className="icon-text"><FontAwesomeIcon icon={faInstagram} className="social-icon" /></a>
+          </div>
         </div>
 
-        
+
         <div className="nav-links">
           <ul>
             <li><Link to="/office">Office</Link></li>
@@ -185,16 +186,16 @@ const Office = () => {
         {showDialog && (
           <div className="dialog-box">
             <div className="dialog-content">
-            <span className="close-btn" onClick={handleDialogClose}>&times;</span>
-            <h1>WORK WITH US</h1>
-            <p>We are always looking for talented Designers, Media Executives and Supervisors to join our team. We do not accept Interns for semesters less than 4 months and Fresh Graduates for less than 1 year.
-            </p>
-            <br></br>
-            <p>All applicants must have a good level of spoken and written English and be proficient in the required software. Applications including a portfolio and a resume in PDF format (no larger than 8 Mb) can be submitted to: hello@designersworkroom.in with the subject line Job.</p>
-            <br></br>
-            <p>
-            Please note that we are currently receiving a large number of applications and therefore cannot guarantee an answer to each applicant. We review all applications and store relevant application for a maximum period of 6 months after which they are deleted. We do not review material submitted via Issuu, Behance, Google Drive or in any packaged file format - only application in .pdf format will be processed.</p>
-          </div>
+              <span className="close-btn" onClick={handleDialogClose}>&times;</span>
+              <h1>WORK WITH US</h1>
+              <p>We are always looking for talented Designers, Media Executives and Supervisors to join our team. We do not accept Interns for semesters less than 4 months and Fresh Graduates for less than 1 year.
+              </p>
+              <br></br>
+              <p>All applicants must have a good level of spoken and written English and be proficient in the required software. Applications including a portfolio and a resume in PDF format (no larger than 8 Mb) can be submitted to: hello@designersworkroom.in with the subject line Job.</p>
+              <br></br>
+              <p>
+                Please note that we are currently receiving a large number of applications and therefore cannot guarantee an answer to each applicant. We review all applications and store relevant application for a maximum period of 6 months after which they are deleted. We do not review material submitted via Issuu, Behance, Google Drive or in any packaged file format - only application in .pdf format will be processed.</p>
+            </div>
           </div>
         )}
       </div>
