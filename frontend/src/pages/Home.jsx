@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -13,7 +13,7 @@ const Home = () => {
     return (
         <div>
             {/* Page-Specific SEO Meta Tags */}
-{/*             <Helmet>
+            <Helmet>
                 <title>Luxury Interior Design & Bespoke Decor | Designers Workroom</title>
                 <meta name="description" content="Explore luxury home and office design solutions at Designers Workroom. A hub for interior designers, architects, and furniture artisans." />
                 <meta name="keywords" content="luxury interior design, bespoke decor, modern home design, architecture studio, interior designers in Delhi" />
@@ -21,7 +21,7 @@ const Home = () => {
                 <meta property="og:description" content="Join a creative hub for designers and architects. Discover innovative home and office decor solutions, handcrafted furniture, and modern interior trends." />
                 <meta property="og:image" content="/assets/home.webp" />
                 <meta property="og:url" content="https://designersworkroom.in" />
-            </Helmet> */}
+            </Helmet>
 
             {/* Optimized H1 Tag for SEO */}
             <h1>Luxury Interior Design & Innovative Architecture Solutions</h1>
