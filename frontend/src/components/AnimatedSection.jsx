@@ -47,7 +47,7 @@ const AnimatedSection = () => {
         <div className="intro">
           <p>
             Designers Workroom represents a budding ambitious studio specializing in Design & Research. As a team of designers & artisans, our backgrounds command a diverse experience in Commercial, Industrial, and Luxury Residential Projects.
-            <br>As a studio, we pride ourselves on channelling equally meticulous attention to the smallest detail as much as to the whole spatial experience. We strive to create refined, timeless spaces and objects, with an understated worldly eclecticism.</br>
+            <br>As a studio, we pride ourselves on channelling equally meticulous attention to the smallest detail as much as to the whole spatial experience. We strive to create refined, timeless spaces and objects, with an understated worldly eclecticism.
           </p>
          <!-- <p>
             As a studio, we pride ourselves on channelling equally meticulous attention to the smallest detail as much as to the whole spatial experience. We strive to create refined, timeless spaces and objects, with an understated worldly eclecticism.
